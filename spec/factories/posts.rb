@@ -2,6 +2,6 @@ FactoryGirl.define do
   factory :post do
     sequence(:title) { |n| "Post #{n}" }
     sequence(:body) { |n| "This is post #{n}" }
-    published false
+    published true
   end
 end
