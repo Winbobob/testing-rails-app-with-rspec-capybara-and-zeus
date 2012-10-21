@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
 
 gem 'rails', '3.2.8'
 
@@ -36,3 +36,17 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.0'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'simplecov', require: false
+end
