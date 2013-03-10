@@ -49,4 +49,5 @@ group :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'simplecov', require: false
+  gem 'cucumber-rails', :require => false
 end
